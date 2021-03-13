@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_xxsmall">5dp</dimen>
+    <dimen name="margin_xsmall">10dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_medium">32dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+
+    <dimen name="event_image_height">200dp</dimen>
+
+</resources>

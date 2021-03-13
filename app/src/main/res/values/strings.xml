@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Events</string>
+    <string name="details_title">Event Details</string>
+    <string name="share">Share</string>
+    <string name="checkin_title">Check-in Form</string>
+    <string name="event_id_hint">Event Id</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="checkin">Check-In</string>
+    <string name="checkin_error">Check-In Error</string>
+
+    <string name="maintenance_title">Somethings Not Right</string>
+    <string name="maintenance_description">Sorry. We are having some technical issues\n(as you can see). Try to refresh the page.\nSometime works :)</string>
+    <string name="re_try">Re-Try</string>
+</resources>
