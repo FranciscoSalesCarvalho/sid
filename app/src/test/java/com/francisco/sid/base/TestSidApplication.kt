@@ -1,5 +1,7 @@
-package com.francisco.sid
+package com.francisco.sid.base
 
+import com.francisco.sid.R
+import com.francisco.sid.SidApplication
 import com.francisco.sid.util.testing.di.component.DaggerTestAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication

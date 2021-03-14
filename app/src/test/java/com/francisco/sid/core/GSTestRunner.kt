@@ -1,4 +1,4 @@
-package com.francisco.sid
+package com.francisco.sid.core
 
 import org.junit.runners.model.FrameworkMethod
 import org.robolectric.RobolectricTestRunner

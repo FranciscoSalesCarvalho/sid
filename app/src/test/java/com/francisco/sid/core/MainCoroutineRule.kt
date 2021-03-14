@@ -1,4 +1,4 @@
-package com.francisco.sid
+package com.francisco.sid.core
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -4,16 +4,14 @@ import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.lifecycle.Lifecycle
 import androidx.recyclerview.widget.RecyclerView
-import com.francisco.sid.GSTestRunner
+import com.francisco.sid.core.GSTestRunner
 import com.francisco.sid.R
-import com.francisco.sid.TestSidApplication
+import com.francisco.sid.base.TestSidApplication
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.robolectric.Shadows
 import org.robolectric.annotation.Config
-import org.robolectric.shadows.ShadowListView
 
 @RunWith(GSTestRunner::class)
 @Config(application = TestSidApplication::class)

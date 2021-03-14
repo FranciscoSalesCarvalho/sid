@@ -1,32 +1,18 @@
 package com.francisco.sid.viewmodel
 
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.francisco.sid.MainCoroutineRule
-import com.francisco.sid.data.repository.EventsRepository
+import com.francisco.sid.base.BaseViewModelTest
 import com.francisco.sid.factory.EventFactory
 import io.mockk.MockKAnnotations
 import io.mockk.every
-import io.mockk.mockk
 import io.mockk.verify
-import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 
-class EventsViewModelTest {
+class EventsViewModelTest: BaseViewModelTest() {
 
     private lateinit var viewModel: EventsViewModel
-
-    private val repository: EventsRepository = mockk()
-
-    @get:Rule
-    val instantExecutorRule = InstantTaskExecutorRule()
-
-    @ExperimentalCoroutinesApi
-    @get:Rule
-    val coroutineRule = MainCoroutineRule()
 
     @Before
     fun setup() {
@@ -35,7 +21,7 @@ class EventsViewModelTest {
     }
 
     @Test
-    fun shouldMakeRequest() = runBlocking<Unit> {
+    fun shouldMakeRequest() = runBlocking {
         val default = EventFactory.default()
         every { runBlocking { repository.fetchEvents() }  } returns listOf(default)
 

@@ -20,8 +20,8 @@ import com.francisco.sid.R
 import com.francisco.sid.util.testing.idle.EspressoIdlingResource
 import com.francisco.sid.ui.activity.MainActivity
 import com.francisco.sid.ui.adapter.EventsAdapter
-import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.`is`
+import org.hamcrest.CoreMatchers.equalTo
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -76,7 +76,7 @@ class EventsListFragmentInstrumentedTest {
 
         assertThat(
             navController.currentDestination?.id,
-            `is`(CoreMatchers.equalTo(R.id.eventDetailsFragment))
+            `is`(equalTo(R.id.eventDetailsFragment))
         )
     }
 }

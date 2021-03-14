@@ -10,7 +10,7 @@ import com.francisco.sid.data.model.Event
 import com.francisco.sid.databinding.FragmentEventDetailsBinding
 import dagger.android.support.DaggerFragment
 
-class EventDetailsFragment: DaggerFragment() {
+class EventDetailsFragment : DaggerFragment() {
 
     private lateinit var binding: FragmentEventDetailsBinding
 
@@ -48,7 +48,7 @@ class EventDetailsFragment: DaggerFragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
+        when (item.itemId) {
             R.id.share -> sharePost()
         }
         return super.onOptionsItemSelected(item)
@@ -68,7 +68,11 @@ class EventDetailsFragment: DaggerFragment() {
     private fun configCheckinButton() {
         binding.btnGoCheckin.setOnClickListener {
             Navigation.findNavController(requireView())
-                .navigate(EventDetailsFragmentDirections.actionEventDetailsFragmentToCheckinFormFragment(event.id))
+                .navigate(
+                    EventDetailsFragmentDirections.actionEventDetailsFragmentToCheckinFormFragment(
+                        event.id
+                    )
+                )
         }
     }
 }
